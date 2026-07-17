@@ -1,0 +1,247 @@
+/* ==========================================================================
+    PAPER THEME - TYPOGRAPHY REFINEMENTS
+    Editorial reading feel: display-serif headings at their natural weight,
+    relaxed body leading, and understated underlined links.
+    Loaded after the layout partials so these rules take precedence.
+    ========================================================================== */
+
+/* Medium weight keeps the serif headings authoritative without going heavy */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4, h5, h6 {
+  font-size: 1.05em;
+}
+
+.page__title {
+  font-size: 2.3em;
+  line-height: 1.15;
+}
+
+/* Relaxed leading for long-form reading */
+body {
+  line-height: 1.7;
+}
+
+.page__content {
+  p, li, dl {
+    line-height: 1.75;
+  }
+
+  h2 {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+/* Quiet, offset underlines on in-content links */
+.page__content a,
+.archive__item-excerpt a {
+  text-decoration: underline;
+  text-decoration-color: var(--global-dark-border-color);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+
+  &:hover {
+    text-decoration-color: var(--global-link-color-hover);
+  }
+}
+
+/* Nav items: smaller, evenly weighted; the home link matches the rest */
+.masthead__menu-item {
+  font-size: 0.95em;
+}
+
+.masthead__menu-item--lg {
+  font-weight: 400;
+}
+
+.masthead__menu-item.selected a {
+  font-weight: 600;
+  border-bottom-width: 1px;
+}
+
+/* Author name in the sidebar gets the serif treatment too */
+.sidebar .author__name {
+  font-family: $serif;
+  font-size: $type-size-4;
+}
+
+/* Profile photo framed in the accent green */
+.author__avatar img {
+  border-color: var(--global-base-color);
+}
+
+/* List/archive titles: serif, medium weight */
+.archive__item-title {
+  font-family: $serif;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+
+/* Blockquotes: italic serif, like pull quotes */
+blockquote {
+  font-family: $serif;
+  font-style: italic;
+  font-size: 1.15em;
+}
+
+/* Page meta and captions in small mono for a typeset detail */
+.page__meta,
+.page__date,
+.archive__item-date {
+  font-family: $monospace;
+  font-size: 0.75em;
+  letter-spacing: 0.02em;
+}
+
+/* Surfaces that hardcode white elsewhere follow the theme background here */
+.toc {
+  background-color: var(--global-bg-color);
+
+  .nav__title {
+    color: var(--global-bg-color);
+  }
+}
+
+input,
+textarea,
+select {
+  background-color: var(--global-bg-color);
+  border-color: var(--global-dark-border-color);
+}
+
+/* News list: quiet rows with mono dates in the left column */
+.news-list {
+  list-style: none;
+  margin: 0.5em 0 1.5em;
+  padding: 0;
+}
+
+.news-item {
+  display: flex;
+  gap: 1.25em;
+  margin-bottom: 0.6em;
+}
+
+.news-item__date {
+  flex: 0 0 6em;
+  font-family: $monospace;
+  font-size: 0.75em;
+  letter-spacing: 0.02em;
+  color: var(--global-text-color-light);
+  padding-top: 0.45em;
+  white-space: nowrap;
+}
+
+.news-item__text {
+  flex: 1;
+}
+
+.news-list__more {
+  font-family: $monospace;
+  font-size: 0.8em;
+  letter-spacing: 0.02em;
+}
+
+/* List entries with a figure: thumbnail on the left, details on the right */
+.archive__item--with-teaser {
+  display: flex;
+  gap: 1.5em;
+  align-items: flex-start;
+
+  .archive__item-teaser-left {
+    flex: 0 0 190px;
+    max-width: 190px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 130px;
+      object-fit: contain;
+      padding: 5px;
+      border: 1px solid var(--global-border-color);
+      border-radius: $border-radius;
+      background: #fff;
+    }
+  }
+
+  .archive__item-body {
+    flex: 1;
+    min-width: 0;
+
+    .archive__item-title {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 0.75em;
+
+    .archive__item-teaser-left {
+      flex-basis: auto;
+      max-width: 260px;
+    }
+  }
+}
+
+/* Small rectangular link badges on publications and projects (Paper, Code, ...) */
+.pub-links {
+  margin: 0.4em 0 0.8em;
+}
+
+a.pub-badge {
+  display: inline-block;
+  padding: 0.15em 0.7em;
+  margin: 0 0.35em 0.35em 0;
+  font-family: $monospace;
+  font-size: 0.7em;
+  letter-spacing: 0.04em;
+  color: var(--global-link-color);
+  border: 1px solid var(--global-dark-border-color);
+  border-radius: $border-radius;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--global-link-color-hover);
+    border-color: var(--global-link-color);
+    background: rgba(73, 129, 76, 0.07);
+    text-decoration: none;
+  }
+}
+
+/* Section headings that are links (e.g. "News") read as links */
+.page__content h1 a,
+.page__content h2 a,
+.page__content h3 a {
+  color: var(--global-link-color);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--global-link-color-hover);
+    text-decoration: underline;
+    text-decoration-color: var(--global-dark-border-color);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+  }
+}
+
+/* Text selection tinted with the accent */
+::selection {
+  background: rgba(73, 129, 76, 0.25);
+}

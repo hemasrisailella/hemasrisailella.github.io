@@ -8,8 +8,9 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "paper" # The available themes options are "default", "paper", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Lella"
+masthead_title           : "About" # Label for the home link in the top navigation; site title is used if unset
 title_separator          : "-"
 name                     : &name "Hemasri Sai Lella"
 description              : &description "Hemasri Sai Lella's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -229,7 +230,7 @@ collections:
     permalink: /:collection/:path/
   portfolio:
     output: true
-    permalink: /:collection/:path/
+    permalink: /projects/:path/
   talks:
     output: true
     permalink: /:collection/:path/

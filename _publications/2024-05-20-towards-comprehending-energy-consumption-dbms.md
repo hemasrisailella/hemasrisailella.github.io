@@ -6,6 +6,10 @@ permalink: /publication/2024-05-20-towards-comprehending-energy-consumption-dbms
 excerpt: 'An empirical study and tooling support to measure and analyze DBMS energy consumption.'
 date: 2024-05-20
 venue: 'Proceedings of the 28th International Conference on Evaluation and Assessment in Software Engineering'
+header:
+  teaser: dbjoules-architecture.png
+paperurl: 'https://doi.org/10.1145/3661167.3661174'
+codeurl: 'https://github.com/rishalab/DBJoules'
 citation: 'Lella, Hemasri Sai, et al. (2024). "Towards comprehending energy consumption of database management systems—a tool and empirical study." <i>Proceedings of the 28th International Conference on Evaluation and Assessment in Software Engineering</i>.'
 ---
 

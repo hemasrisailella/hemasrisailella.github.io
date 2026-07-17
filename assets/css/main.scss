@@ -13,7 +13,6 @@
 
     "themes",
     "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
 
     "include/mixins",
     "vendor/susy/susy",
@@ -36,6 +35,9 @@
     "layout/archive",
     "layout/sidebar",
     "layout/json_cv",
+{% if site.site_theme == "paper" %}
+    "theme/paper_typography",
+{% endif %}
 
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",

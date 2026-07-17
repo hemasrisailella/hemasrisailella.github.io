@@ -1,0 +1,48 @@
+# News items shown on the homepage (latest few) and on the /news/ page (all).
+# Add new items at the top. Each item needs a date and text; text supports
+# markdown, so links are written as [label](url).
+#
+# - date: 2026-07-01
+#   text: 'Example item with a [link](/publication/example).'
+
+- date: 2026-07-15
+  text: 'Attended the Google Safety Engineering Center (GSEC) India Research Day at Google Ananta, Bengaluru.'
+
+- date: 2026-06-01
+  text: 'Served as a Lead Volunteer at ACM SIGMOD 2026, held in Bengaluru.'
+
+- date: 2026-05-01
+  text: 'Completed the NPTEL Mathematical Foundations of Machine Learning course with Elite Silver certification (top 1%).'
+
+- date: 2026-04-01
+  text: 'Won 2nd place at Bharat Bricks Hacks 2026 for [ASHA Sahayak](https://github.com/hemasrisailella/Asha_Sahayaka), a multilingual maternal-healthcare assistant built on Databricks.'
+
+- date: 2025-09-01
+  text: 'Attended Maitreyee, IBM Research India''s annual student outreach event.'
+
+- date: 2025-08-01
+  text: 'Serving as Department and Student Representative for the CSA department at IISc (August 2025 – July 2026).'
+
+- date: 2025-08-01
+  text: 'Started as a Teaching Assistant for E0 240: Modeling and Simulation at IISc.'
+
+- date: 2025-03-01
+  text: 'Awarded the Reliance Foundation Postgraduate Scholarship, selected among 100 postgraduate scholars across India.'
+
+- date: 2024-12-01
+  text: 'Attended the Present and Future Computing Systems Workshop at IISc.'
+
+- date: 2024-11-15
+  text: 'Attended the Adobe–IISc Research Workshop.'
+
+- date: 2024-11-01
+  text: 'Participated in the Mercuria Hackathon.'
+
+- date: 2024-08-01
+  text: 'Joined the Indian Institute of Science, Bangalore as an M.Tech (Research) student in Computer Science and Automation.'
+
+- date: 2024-05-20
+  text: 'Our paper "[Towards comprehending energy consumption of database management systems — a tool and empirical study](/publication/2024-05-20-towards-comprehending-energy-consumption-dbms)" was accepted at EASE 2024.'
+
+- date: 2022-12-01
+  text: 'Attended the Theoretical Computer Science Winter School at IIT Delhi.'

@@ -47,11 +47,12 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
 
-        {% if page.paperurl or page.slidesurl or page.bibtexurl %}
-          <p style="font-size: smaller">
-            {% if page.paperurl %}<a href="{{ page.paperurl }}">Download Paper</a>{% endif %}
-            {% if page.slidesurl %}{% if page.paperurl %} | {% endif %}<a href="{{ page.slidesurl }}">Download Slides</a>{% endif %}
-            {% if page.bibtexurl %}{% if page.paperurl or page.slidesurl %} | {% endif %}<a href="{{ page.bibtexurl }}">Download Bibtex</a>{% endif %}
+        {% if page.paperurl or page.slidesurl or page.bibtexurl or page.codeurl %}
+          <p class="pub-links">
+            {% if page.paperurl %}<a class="pub-badge" href="{{ page.paperurl }}">Paper</a>{% endif %}
+            {% if page.slidesurl %}<a class="pub-badge" href="{{ page.slidesurl }}">Slides</a>{% endif %}
+            {% if page.codeurl %}<a class="pub-badge" href="{{ page.codeurl }}">Code</a>{% endif %}
+            {% if page.bibtexurl %}<a class="pub-badge" href="{{ page.bibtexurl }}">BibTeX</a>{% endif %}
           </p>
         {% endif %}
 

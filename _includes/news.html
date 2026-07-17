@@ -1,0 +1,14 @@
+{% include base_path %}
+{% assign news_items = site.data.news | sort: "date" | reverse %}
+{% assign news_limit = include.limit | default: 1000 %}
+<ul class="news-list">
+  {% for item in news_items limit: news_limit %}
+  <li class="news-item">
+    <span class="news-item__date">{{ item.date | date: "%b %Y" }}</span>
+    <span class="news-item__text">{{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+  </li>
+  {% endfor %}
+</ul>
+{% if include.limit and news_items.size > news_limit %}
+<a class="news-list__more" href="{{ base_path }}/news/">All news &rarr;</a>
+{% endif %}

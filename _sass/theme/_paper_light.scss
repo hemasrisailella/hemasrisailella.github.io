@@ -1,0 +1,48 @@
+/* ==========================================================================
+    PAPER THEME - LIGHT VERSION
+    Warm cream background, soft ink text, muted forest-green accent.
+    ========================================================================== */
+/* Color codes used for the theme */
+$primary-color              : #49814C;
+$gray                       : #6B6963;
+$dark-gray                  : #3C3B36;
+$darker-gray                : #23221D;
+$light-gray                 : #A9A7A0;
+$lighter-gray               : #E9E8E2;
+
+/* Color codes used for the site */
+$danger-color               : #b3382e;
+$info-color                 : #3B723E;
+$notice-color               : #6B6963;
+$success-color              : #49814C;
+$warning-color              : #b07d24;
+
+/* Other basic settings for the template */
+$border-radius              : 6px;
+$box-shadow                 : 0 1px 2px rgba(19, 18, 14, 0.06);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Paper light theme for the site */
+:root {
+    --global-base-color                 : #{$primary-color};
+    --global-bg-color                   : #F7F5EF;
+    --global-footer-bg-color            : #E9E8E2;
+    --global-border-color               : #DCDBD4;
+    --global-dark-border-color          : #C9C7BF;
+    --global-code-background-color      : #EDEBE4;
+    --global-code-text-color            : #3C3B36;
+    --global-fig-caption-color          : #6B6963;
+    --global-link-color                 : #3B723E;
+    --global-link-color-hover           : #29532B;
+    --global-link-color-visited         : #5D8F5E;
+    --global-masthead-link-color        : #3C3B36;
+    --global-masthead-link-color-hover  : #13120E;
+    --global-text-color                 : #23221D;
+    --global-text-color-light           : #6B6963;
+    --global-thead-color                : #E9E8E2;
+}
